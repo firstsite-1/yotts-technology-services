@@ -1,0 +1,320 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #111827;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 15px 30px;
+    min-height: 110px;
+    background: #111827;
+}
+
+/* TTS logo size */
+.logo {
+    width: 220px;
+    height: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 100px 6%;
+    text-align: center;
+    background: #f3f4f6;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.hero h1 {
+    margin: 10px 0 20px;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.hero p:not(.brand-name) {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    color: #1f2937;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+.button-secondary {
+    background: #111827;
+}
+
+.button-secondary:hover {
+    background: #374151;
+}
+
+section {
+    padding: 80px 6%;
+}
+
+section:nth-child(even) {
+    background: #f9fafb;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 34px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #4b5563;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #374151;
+    font-size: 18px;
+}
+
+.cards,
+.services,
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card,
+.service,
+.step {
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-icon,
+.step-number {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.card h3,
+.service h3,
+.step h3 {
+    margin-top: 0;
+}
+
+.card p,
+.service p,
+.step p {
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.contact-box {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.contact-note {
+    margin-top: 15px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+footer {
+    padding: 35px 6%;
+    text-align: center;
+    background: #111827;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .cards,
+    .services,
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .hero {
+        padding: 70px 5%;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p:not(.brand-name) {
+        font-size: 17px;
+    }
+
+    .cards,
+    .services,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 220px;
+    }
+}
+
