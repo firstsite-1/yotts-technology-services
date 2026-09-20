@@ -27,8 +27,9 @@ nav {
 
 /* TTS logo size */
 .logo {
-    width: 220px;
-    height: auto;
+    width: 600px;
+    height: 300px;
+    object-fit: contain;
     display: block;
 }
 
