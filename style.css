@@ -109,13 +109,23 @@ nav {
 }
 
 section {
+
     padding: 80px 6%;
+
 }
 
-section:nth-child(even) {
-    background: #f9fafb;
+#about {
+    background: #4A3428;
+}
+#about h2 {
+    color: #F4C95D;
 }
 
+#services {
+
+    background: #E8F1F5;
+
+}
 section h2 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -134,7 +144,7 @@ section h2 {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    color: #374151;
+    color: #ffffff;
     font-size: 18px;
 }
 
